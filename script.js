@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //-- KOde Javascript Hamburger Menu --
+  const hamburger = document.querySelector(".hamburger-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
   // --- FITUR DROPDOWN ---
   const dropdownButtons = document.querySelectorAll(".dropdown-button");
 
@@ -62,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000);
   }
 });
+
