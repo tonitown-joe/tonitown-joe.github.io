@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="assets/css/elektronik.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+    <title>Kalung - shopper</title>
+</head>
+<body>
+     <header>
+      <div class="header-top">
+        <div class="container header-top-container">
+          <div class="header-top-social">
+            <a href="#"
+              ><img
+                src="assets/images/icons/icons8-instagram-48.png"
+                alt="instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/icons/icons8-facebook-48.png"
+                alt="facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/images/icons/icons8-linkedin-48.png"
+                alt="linkedin"
+            /></a>
+            <a href="#"
+              ><img src="assets/images/icons/icons8-x-50.png" alt="X"
+            /></a>
+          </div>
+          <div class="header-top-promo">
+            <p>GRATIS PENGANTARAN BAGI YANG ORDER MINGGU INI > Rp 100.000</p>
+          </div>
+          <div class="header-top-selectors">
+            <ul>
+              <li class="dropdown-currency1">
+                <a href="#" class="dropbtn-currency">Mata Uang</a>
+                <div class="dropdown-currency">
+                  <a href="#">RUPIAH</a>
+                  <a href="#">USD</a>
+                  <a href="#">EUR</a>
+                </div>
+              </li>
+              <li class="dropdown-language1">
+                <a href="#" class="dropbtn-language">Bahasa</a>
+                <div class="dropdown-language">
+                  <a href="#">INDONESIA</a>
+                  <a href="#">ENGLISH</a>
+                  <a href="#">GERMANY</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container header-main-container">
+          <div class="menu-toggle-btn" onclick="toggleMenu()">
+        <ion-icon name="menu-outline"></ion-icon>
+    </div>
+
+          <div class="header-logo">SHOPPER</div>
+
+          <div class="header-search">
+            <input type="text" placeholder="Masukkan Nama Produk.." />
+            <span class="header-search-icon">🔍</span>
+          </div>
+
+          <div class="header-main-icons">
+            <a href="login.html" class="icon-link">
+              <div class="icon-item">👤</div>
+            </a>
+            <a href="wishlist.html" class="icon-link">
+              <div class="icon-item">
+                ❤
+                <span class="notification-badge">0</span>
+              </div>
+            </a>
+            <a href="cart.html" class="icon-link">
+              <div class="icon-item">
+                🛍️
+                <span class="notification-badge">0</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-nav" id="mobile-nav">
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">CATEGORIES</a>
+                <div class="dropdown-content">
+                  <a href="elektronik.html" class="navbar-link">Electronics</a>
+                  <a href="fashion.html" class="navbar-link">Fashion</a>
+                  <a href="homegarden.html" class="navbar-link">Home & Garden</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">MEN'S</a>
+                <div class="dropdown-content">
+                  <a href="topmen.html">Tops</a>
+                  <a href="bottom.html">Bottoms</a>
+                  <a href="outerwear.html">Outerwear</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">WOMEN'S</a>
+                <div class="dropdown-content">
+                  <a href="gaun.html">Dresses</a>
+                  <a href="rok.html">Skirts</a>
+                  <a href="asesoris.html">Accessories</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">JEWELRY</a>
+                <div class="dropdown-content">
+                  <a href="rings.html">Rings</a>
+                  <a href="kalung.html">Necklaces</a>
+                  <a href="gelang.html">Bracelets</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">SHOES</a>
+                <div class="dropdown-content">
+                  <a href="sepatupria.html">Mens</a>
+                  <a href="sepatuwanita.html">Womens</a>
+                  <a href="sepatuunisex.html">Unisex</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">PERFUME</a>
+                <div class="dropdown-content">
+                  <a href="parfumpria.html">Men's</a>
+                  <a href="parfumwanita.html">Women's</a>
+                  <a href="parfumunisex.html">Unisex</a>
+                </div>
+              </li>
+              <li><a href="blog_utama.html">BLOG</a></li>
+              <li><a href="hotoffer.html">HOT OFFERS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+        <div class="main-wrapper">
+          <button class="sidebar-toggle-btn" onclick="toggleSidebar()">
+            <i class="fa-solid fa-bars"></i> Tampilkan Filter & Kategori
+        </button>
+        <aside class="sidebar">
+            <div class="sidebar-category">
+                <h2 class="sidebar-title">CATEGORY</h2>
+                <ul class="category-list">
+                     <li class="category-item-sidebar">
+                            <button class="accordion-btn">
+                                <span class="category-label">
+                                    <i class="fa-solid fa-shirt"></i> Clothes
+                                </span>
+                                <span class="stock">300</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </button>
+                            <ul class="sub-category-list">
+                                <li><a href="#">Shirt <span class="stock">300</span></a></li>
+                                <li><a href="#">Shorts & Jeans <span class="stock">60</span></a></li>
+                                <li><a href="#">Jacket <span class="stock">50</span></a></li>
+                                <li><a href="#">Dress & Frock <span class="stock">87</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="category-item-sidebar">
+                            <button class="accordion-btn">
+                                <span class="category-label">
+                                    <i class="fa-solid fa-shoe-prints"></i> Footwear
+                                </span>
+                                <span class="stock">75</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </button>
+                            <ul class="sub-category-list">
+                                <li><a href="#">Sports <span class="stock">45</span></a></li>
+                                <li><a href="#">Formal <span class="stock">75</span></a></li>
+                                <li><a href="#">Casual <span class="stock">35</span></a></li>
+                                <li><a href="#">Safety Shoes <span class="stock">26</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="category-item-sidebar">
+                            <button class="accordion-btn">
+                                <span class="category-label">
+                                    <i class="fa-solid fa-gem"></i> Jewelry
+                                </span>
+                                <span class="stock">73</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </button>
+                            <ul class="sub-category-list">
+                                <li><a href="#">Earrings <span class="stock">46</span></a></li>
+                                <li><a href="#">Couple Rings <span class="stock">73</span></a></li>
+                                <li><a href="#">Necklace <span class="stock">61</span></a></li>
+                            </ul>
+                        </li>
+                         <li class="category-item-sidebar">
+                            <button class="accordion-btn">
+                                <span class="category-label">
+                                    <i class="fa-solid fa-glass-martini-alt"></i> Cosmetics
+                                </span>
+                                <span class="stock">200</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </button>
+                            <ul class="sub-category-list">
+                                <li><a href="#">Shampoo <span class="stock">68</span></a></li>
+                                <li><a href="#">Sunscreen <span class="stock">46</span></a></li>
+                                <li><a href="#">Body Wash <span class="stock">79</span></a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="best-sellers">
+                <h2 class="sidebar-title">BEST SELLERS</h2>
+                <ul class="seller-list">
+                    <li class="seller-item">
+                            <img src="assets/images/Mantel Wol Panjang/Proyek tanpa judul (23).jpeg" alt="product-image">
+                            <div class="seller-info">
+                                <p class="seller-name">Mantel Wol Panjang</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <p class="seller-price">
+                                    <span class="old-price">550.000</span>
+                                    <span class="current-price">450.000</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="seller-item">
+                            <img src="assets/images/Shampo/Proyek tanpa judul (2).jpeg" alt="product-image">
+                            <div class="seller-info">
+                                <p class="seller-name">Shampoo Anak</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="seller-price">
+                                    <span class="old-price">170.000</span>
+                                    <span class="current-price">120.000</span>
+                                </p>
+                            </div>
+                        </li>
+
+                         <li class="seller-item">
+                            <img src="assets/images/kalung/Proyek tanpa judul (22).jpeg" alt="product-image">
+                            <div class="seller-info">
+                                <p class="seller-name">Liontin</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="seller-price">
+                                    <span class="old-price">1.700.000</span>
+                                    <span class="current-price">1.200.000</span>
+                                </p>
+                            </div>
+                        </li>
+
+                         <li class="seller-item">
+                            <img src="assets/images/jaket/Proyek tanpa judul (12).jpeg" alt="product-image">
+                            <div class="seller-info">
+                                <p class="seller-name">Jacket Bomber</p>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <p class="seller-price">
+                                    <span class="old-price">750.000</span>
+                                    <span class="current-price">650.000</span>
+                                </p>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+
+            <section class="testimonial">
+    <div class="container">
+        <h2 class="section-title">Testimonial</h2>
+        <div class="testimonial-slider-container">
+            <div class="testimonial-grid" id="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="assets/images/testimonial-1.jpg" alt="Sarah Johnson" class="client-photo">
+                        <div class="client-details">
+                            <h4 class="client-name">Sarah Johnson</h4>
+                            <span class="client-location">Jakarta, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Produknya berkualitas tinggi dan sesuai dengan deskripsi. Pelayanannya sangat cepat dan ramah."
+                        </p>
+                        <div class="testimonial-rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="assets/images/testimonial-1.jpg" alt="Michael Tan" class="client-photo">
+                        <div class="client-details">
+                            <h4 class="client-name">Michael Tan</h4>
+                            <span class="client-location">Bandung, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Desainnya modern dan nyaman dipakai.Sangat direkomendasikan!"
+                        </p>
+                        <div class="testimonial-rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="client-info">
+                        <img src="assets/images/testimonial-1.jpg" alt="Emily White" class="client-photo">
+                        <div class="client-details">
+                            <h4 class="client-name">Emily White</h4>
+                            <span class="client-location">Surabaya, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Pengiriman sangat cepat, barang dikemas dengan rapi. Akan berbelanja lagi di sini."
+                        </p>
+                        <div class="testimonial-rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+        </aside>
+    
+
+    <section class="product" data-section="elektronik">
+        <div class="container">
+            <div class="product-main">
+                <div class="product-grid">
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (19).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (20).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">4.500.000</p>
+                                <del>7.000.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                     <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (21).jpeg" alt="Air Fryer" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (22).jpeg" alt="Air Fryer" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">4.500.000</p>
+                                <del>6.500.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                </div>
+
+                <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (25).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (28).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Kalung Rantai Emas Klasik</h3></a>
+                            <div class="price-box">
+                                <p class="price">250.000</p>
+                                <del>350.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (32).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (30).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Kalung Rantai Emas Klasik</h3></a>
+                            <div class="price-box">
+                                <p class="price">405.000</p>
+                                <del>500.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (27).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (25).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Kalung Rantai Emas Klasik</h3></a>
+                            <div class="price-box">
+                                <p class="price">2.000.000</p>
+                                <del>3.500.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (32).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (33).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">325.000</p>
+                                <del>425.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (19).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (21).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">350.000</p>
+                                <del>550.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (20).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (22).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">200.000</p>
+                                <del>350.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="showcase">
+                        <div class="showcase-banner">
+                            <img src="assets/images/kalung/Proyek tanpa judul (19).jpeg" alt="Kulkas1" width="300px" class="product-img default" />
+                            <img src="assets/images/kalung/Proyek tanpa judul (22).jpeg" alt="Kulkas1" width="300px" class="product-img hover" />
+                            <p class="showcase-badge">Sale</p>
+                        </div>
+                        <div class="showcase-content">
+                            <a href="#" class="showcase-category">Necklaces</a>
+                            <a href="#"><h3 class="showcase-title">Liontin Solitaire Berlian</h3></a>
+                            <div class="price-box">
+                                <p class="price">1.500.000</p>
+                                <del>1.500.000</del>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <span>Lihat Detail</span>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <section class="deal-of-the-day">
+                <div class="deal-card">
+                    <img src="assets/images/gelang/banner.jpeg" alt="deal-image" width="100%" class="banner-alt">
+                        <div class="banner-content">
+                <p class="banner-subtitle">Trending item</p>
+                <h2 class="banner-title">Gelang Bangle Perak </h2>
+                <p class="banner-text">Mulai Rp <span>350.000</span> an</p>
+                <a href="#" class="banner-btn">Shop Now</a>
+              </div>
+                        </div>
+                </div>
+            </section>
+    </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+    <div class="footer-category">
+        <div class="container">
+            <h2 class="footer-category-title">Brand Directory</h2>
+            <div class="footer-category-box">
+                <h3 class="category-box-title">Fashion :</h3>
+                <a href="#" class="footer-category-link">Clothing</a>
+                <a href="#" class="footer-category-link">Shoes</a>
+                <a href="#" class="footer-category-link">Accessories</a>
+                <a href="#" class="footer-category-link">Bags</a>
+                <a href="#" class="footer-category-link">Watches</a>
+                <a href="#" class="footer-category-link">Jewelry</a>
+                <a href="#" class="footer-category-link">Dress & Frock</a>
+            </div>
+
+            <div class="footer-category-box">
+                <h3 class="category-box-title">Footwear :</h3>
+                <a href="#" class="footer-category-link">Sneakers</a>
+                <a href="#" class="footer-category-link">Boots</a>
+                <a href="#" class="footer-category-link">Sandals</a>
+                <a href="#" class="footer-category-link">Loafers</a>
+                <a href="#" class="footer-category-link">sport</a>
+          <a href="#" class="footer-category-link">formal</a>
+          <a href="#" class="footer-category-link">Boots</a>
+          <a href="#" class="footer-category-link">casual</a>
+          <a href="#" class="footer-category-link">cowboy shoes</a>
+          <a href="#" class="footer-category-link">safety shoes</a>
+            </div>
+
+            <div class="footer-category-box">
+                <h3 class="category-box-title">Jewellery :</h3>
+                <a href="#" class="footer-category-link">Necklaces</a>
+                <a href="#" class="footer-category-link">Earrings</a>
+                <a href="#" class="footer-category-link">Bracelets</a>
+                <a href="#" class="footer-category-link">Rings</a>
+                <a href="#" class="footer-category-link">Pendants</a>
+                <a href="#" class="footer-category-link">Crystal</a>
+                <a href="#" class="footer-category-link">Bangles</a>
+                <a href="#" class="footer-category-link">bracelets</a>
+                <a href="#" class="footer-category-link">nosepin</a>
+                <a href="#" class="footer-category-link">chain</a>
+                <a href="#" class="footer-category-link">Earrings</a>
+                <a href="#" class="footer-category-link">Couple rings</a>
+            </div>
+
+            <div class="footer-category-box">
+          <h3 class="category-box-title">cosmetics :</h3>
+        
+          <a href="#" class="footer-category-link">Shampoo</a>
+          <a href="#" class="footer-category-link">Bodywash</a>
+          <a href="#" class="footer-category-link">Facewash</a>
+          <a href="#" class="footer-category-link">makeup kit</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+          <a href="#" class="footer-category-link">prefume</a>
+          <a href="#" class="footer-category-link">Body soap</a>
+          <a href="#" class="footer-category-link">scrub</a>
+          <a href="#" class="footer-category-link">hair gel</a>
+          <a href="#" class="footer-category-link">hair colors</a>
+          <a href="#" class="footer-category-link">hair dye</a>
+          <a href="#" class="footer-category-link">sunscreen</a>
+          <a href="#" class="footer-category-link">skin loson</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer-nav">
+        <div class="container">
+            <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                    <h2 class="nav-title">Populer Categories</h2>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Fashion</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Electronics</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Cosmetics</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Health</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a href="#" class="footer-nav-link">Watches</a>
+                </li>
+            </ul>
+
+            <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <img src="assets/images/payment.png" alt="patment gateway" class="payment-img">
+            <p class="copyright">
+                Copyright &copy; <a href="index.html">SHOPPER</a>  all rights reserved 2025.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    
+    <script src="assets/script/elektronik.js"></script>
+</body>
+</html>
