@@ -2010,9 +2010,7 @@ footer {
     gap: 20px;
   }
 
-  .showcase-banner {
-    width: 100%;
-  }
+
 
   .showcase-category {
     font-size: 15px;
@@ -2234,39 +2232,5 @@ footer {
     width: 100%;
     height: auto;
     margin-left: -5px;
-  }
-
-   .product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-
-  .showcase-banner {
-    gap: 20px;
-  }
-
-  .showcase-banner {
-    width: 100%;
-  }
-
-  .showcase-category {
-    font-size: 15px;
-  }
-
-  .showcase-title {
-    font-size: 20px;
-  }
-
-  .price-box {
-    margin-bottom: 20px;
-  }
-
-  .price-box .price {
-    font-size: 20px;
-  }
-
-  .price-box del {
-    font-size: 20px;
   }
 }
