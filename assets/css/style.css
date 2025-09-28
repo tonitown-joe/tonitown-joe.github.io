@@ -1503,6 +1503,231 @@ footer {
   .main-wrapper {
     grid-template-columns: 250px 1fr;
   }
+
+  .full-width-container {
+    width: 100vw;
+    position: relative;
+    left: 10%;
+    overflow: hidden;
+  }
+
+  .banner-slider {
+    padding: 0;
+    overflow: hidden;
+    margin-left: -40%;
+  }
+
+  .category {
+    padding: 30px 0;
+  }
+
+  .category-item-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+  }
+
+  .category-item-container.has-scrollbar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: max-content;
+    animation: slide-scroll 20s linear infinite;
+  }
+}
+
+@media (max-width: 1025px) {
+  .header-top-promo {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+  }
+
+  .header-top-social {
+    display: none;
+  }
+
+  .header-top-slectors ul {
+    padding: 15px 20px;
+  }
+
+  .header-search {
+    flex-grow: 1;
+    max-width: 400px;
+  }
+
+  .main-wrapper {
+    grid-template-columns: 250px 1fr;
+  }
+
+  .main-wrapper {
+    display: block;
+  }
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-category {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+
+  .sidebar-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .product-list-scroll {
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  .product-row {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+  }
+
+  .product-card {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .product-category {
+    color: var(--warna-primer);
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .product-name {
+    font-size: 25px;
+  }
+
+  .price-info {
+    margin-bottom: 20px;
+  }
+
+  .price-info .current-price {
+    font-size: 20px;
+  }
+
+  .price-info .old-price {
+    font-size: 20px;
+    color: red;
+  }
+
+  .deal-card {
+    display: block;
+  }
+
+  .deal-card img {
+    width: auto;
+    margin-left: 2.5em;
+  }
+
+  .deal-title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .deal-description {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .rating {
+    font-size: 25px;
+  }
+
+  .deal-price .current-price {
+    font-size: 25px;
+  }
+
+  .deal-price .old-price {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 35px;
+    gap: 25px;
+  }
+
+  .service-item ion-icon {
+    margin-top: 15px;
+    font-size: 45px;
+  }
+
+  .service-content .service-title {
+    font-size: 25px;
+  }
+
+  .service-content .service-desc {
+    color: var(--warna-hitam-hangat);
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .showcase-banner {
+    gap: 20px;
+  }
+
+  .showcase-category {
+    font-size: 20px;
+  }
+
+  .showcase-title {
+    font-size: 30px;
+  }
+
+  .showcase-rating ion-icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .price-box {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .price-box .price {
+    font-size: 30px;
+  }
+
+  .price-box del {
+    font-size: 30px;
+  }
+
+  .testimonial-card {
+    width: 50%;
+  }
+
+  .footer-category-title {
+    font-size: 35px;
+  }
+
+  .category-box-title {
+    font-size: 25px;
+  }
+  .footer-category-link {
+    font-size: 25px;
+  }
+
+  .footer-nav-link {
+    font-size: 25px;
+  }
 }
 
 /* Ponsel dan Layar kecil (Contoh: max 768px) */
@@ -1626,17 +1851,23 @@ footer {
   }
 
   .banner-content {
-    top: 20%;
+    top: 15%;
     left: 5px;
     padding: 15px;
   }
 
+  .banner-subtitle {
+    font-size: 13px;
+  }
+
   .banner-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-top: 3px;
   }
 
   .banner-text {
     font-size: 1.8rem;
+    margin-top: 3px;
   }
 
   .full-width-container {
@@ -1729,6 +1960,24 @@ footer {
     font-weight: bold;
   }
 
+  .testimonial-grid .testimonial-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .deal-title {
+    font-size: 25px;
+  }
+
+  .deal-description {
+    font-size: 20px;
+  }
+
   .service-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -1754,11 +2003,35 @@ footer {
   .product-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 35px;
+    gap: 25px;
   }
 
   .showcase-banner {
     gap: 20px;
+  }
+
+  .showcase-banner {
+    width: 100%;
+  }
+
+  .showcase-category {
+    font-size: 15px;
+  }
+
+  .showcase-title {
+    font-size: 20px;
+  }
+
+  .price-box {
+    margin-bottom: 20px;
+  }
+
+  .price-box .price {
+    font-size: 20px;
+  }
+
+  .price-box del {
+    font-size: 20px;
   }
 
   .blog-container .has-scrollbar {
@@ -1775,7 +2048,7 @@ footer {
   }
 
   .blog-title {
-    font-size: 20px;
+    font-size: 15px;
     align-items: center;
     text-align: center;
   }
@@ -1789,7 +2062,15 @@ footer {
   }
 
   .footer-category-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  .category-box-title {
+    font-size: 25px;
+  }
+
+  .footer-category-link {
+    font-size: 20px;
   }
 
   .footer-nav .container {
@@ -1801,11 +2082,191 @@ footer {
     width: 100%;
     gap: 15px;
   }
+
+  .footer-nav-item .nav-title {
+    font-size: 25px;
+  }
+
+  .footer-nav-item .footer-nav-link {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 769px) {
   /* Pastikan #mobile-nav tetap disembunyikan di desktop */
   #mobile-nav {
     display: flex;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .dropdown-content.active {
+    display: block !important;
+  }
+
+  .header-nav nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .header-nav a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 5px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+
+  .header-nav a:hover {
+    color: var(--warna-primer);
+  }
+
+  /* Gaya untuk Bagian Kategori  */
+  .full-width-container {
+    width: 100vw;
+    position: relative;
+    left: -14%;
+    overflow: hidden;
+  }
+
+  .banner-slider {
+    padding: 0;
+    overflow: hidden;
+    margin-left: 27%;
+  }
+
+  .category {
+    padding: 30px 0;
+  }
+
+  .category-item-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+  }
+
+  .category-item-container.has-scrollbar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    width: max-content; /* Pastikan wadah cukup lebar untuk semua item */
+    animation: slide-scroll 20s linear infinite;
+  }
+
+  /* Menyembunyikan scrollbar untuk browser berbasis Webkit (Chrome, Safari) */
+  .category-item-container.has-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-item-container.has-scrollbar {
+    scrollbar-width: none; /* Menyembunyikan scrollbar untuk Firefox */
+  }
+
+  .category-item {
+    flex-shrink: 0;
+    width: 200px;
+    scroll-snap-align: start;
+    background-color: var(--warna-putih-murni);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-img-box {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-color: var(--warna-abu-terang);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .category-item-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .category-item-amount {
+    font-size: 1.2rem;
+    color: #888;
+  }
+
+  .category-btn {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--warna-primer);
+    margin-top: 10px;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .deal-card img {
+    width: 100%;
+    height: auto;
+    margin-left: -5px;
+  }
+
+   .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .showcase-banner {
+    gap: 20px;
+  }
+
+  .showcase-banner {
+    width: 100%;
+  }
+
+  .showcase-category {
+    font-size: 15px;
+  }
+
+  .showcase-title {
+    font-size: 20px;
+  }
+
+  .price-box {
+    margin-bottom: 20px;
+  }
+
+  .price-box .price {
+    font-size: 20px;
+  }
+
+  .price-box del {
+    font-size: 20px;
   }
 }

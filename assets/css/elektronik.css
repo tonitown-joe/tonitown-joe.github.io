@@ -1008,36 +1008,21 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Grid Produk: Ubah ke 2 kolom di Tablet */
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
+  /* --- HEADER & NAVIGASI --- */
 
-  /* Sidebar: Pastikan lebar tetap ideal */
-  .sidebar {
-    width: 250px;
-  }
-
-  /* Tata letak Deal of the Day */
-  .banner-title {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 991px) {
   .container {
     padding: 0 15px;
+  }
+
+  /* Sembunyikan Header Top di Mobile */
+  .header-top {
+    display: none;
   }
 
   .header-main-container {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 15px;
-  }
-
-  .header-top {
-    display: none;
   }
 
   .header-search {
@@ -1128,12 +1113,152 @@ footer {
     display: block !important;
   }
 
+  /* Grid Produk: Ubah ke 2 kolom di Tablet */
+  .product-grid {
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .showcase-banner img {
+    width: 100%;
+  }
+
+  .showcase-content .showcase-category {
+    font-size: 15px;
+  }
+
+  .showcase-content .showcase-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .price-box {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .price-box .price {
+    font-size: 15px;
+  }
+
+  .price-box del {
+    font-size: 15px;
+  }
+
+  .add-to-cart-btn span {
+    font-size: 15px;
+  }
+
+  /* Sidebar: Pastikan lebar tetap ideal */
+  .sidebar {
+    width: 250px;
+  }
+
+  /* Tata letak Deal of the Day */
+  .banner-content {
+    width: 80%;
+    height: 70%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .banner-content .banner-subtitle {
+    font-size: 15px;
+    color: var(--warna-putih-murni);
+    text-shadow: 0 5px 5px var(--warna-primer);
+    margin-bottom: 10px;
+  }
+
+  .banner-content .banner-title {
+    font-size: 15px;
+    color: var(--warna-putih-murni);
+  }
+
+  .banner-content .banner-text {
+    font-size: 15px;
+    color: var(--warna-putih-murni);
+    text-shadow: 0 5px 5px var(--warna-primer);
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  .banner-btn {
+    font-size: 10px;
+    font-weight: 700;
+    border: 1px solid var(--warna-primer);
+    color: var(--warna-putih-murni);
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .dropdown-content.active {
+    display: block !important;
+  }
+
+  .header-nav nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .header-nav a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 5px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+
+  .header-nav a:hover {
+    color: var(--warna-primer);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--warna-putih-murni);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    left: 0;
+    top: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--warna-abu-terang);
+  }
+
   .main-wrapper {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     gap: 1.5em;
     margin-top: 3em;
+  }
+
+  .sidebar-toggle-btn {
+    font-size: 15px;
   }
 
   .sidebar-toggle-btn {
@@ -1163,8 +1288,38 @@ footer {
 
   /* Grid Produk: 3 kolom di layar yang lebih besar dari 768px */
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .showcase-banner img {
+    width: 100%;
+  }
+
+  .showcase-content .showcase-category {
+    font-size: 20px;
+  }
+
+  .showcase-content .showcase-title {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  .price-box {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .price-box .price {
+    font-size: 20px;
+  }
+
+  .price-box del {
+    font-size: 20px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 20px;
   }
 
   /* Testimonial Card */
@@ -1177,17 +1332,207 @@ footer {
   .testimonial-card .testimonial-text {
     font-size: 1.4rem;
   }
-
-  /* Banner Alt */
-.banner-content {
-  width: 100%;
 }
 
-  .banner-title {
-    font-size: 2rem;
-  }
-  .banner-text {
-    font-size: 1rem;
+@media (min-width: 1025px) {
+  .container {
+    padding: 0 15px;
   }
 
+  .header-top {
+    display: flex;
+  }
+
+  .header-top-promo {
+    display: flex;
+  }
+
+  .header-top-social {
+    display: flex;
+  }
+
+  .main-wrapper {
+    grid-template-columns: 250px 1fr;
+  }
+
+  .main-wrapper {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-category {
+    border-bottom: none;
+    padding-bottom: 20px;
+  }
+
+  .sidebar-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .seller-item img {
+    width: 15%;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .seller-info {
+    margin-left: 20px;
+  }
+
+  .product-list-scroll {
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  .product-row {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+  }
+
+  .product-card {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .product-category {
+    color: var(--warna-primer);
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .product-name {
+    font-size: 25px;
+  }
+
+  .price-info {
+    margin-bottom: 20px;
+  }
+
+  .price-info .current-price {
+    font-size: 20px;
+  }
+
+  .price-info .old-price {
+    font-size: 20px;
+    color: red;
+  }
+
+  .deal-card {
+    display: block;
+  }
+
+  .deal-card img {
+    width: auto;
+    margin-left: 2.5em;
+  }
+
+  .deal-title {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .deal-description {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .rating {
+    font-size: 25px;
+  }
+
+  .deal-price .current-price {
+    font-size: 25px;
+  }
+
+  .deal-price .old-price {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 35px;
+    gap: 25px;
+  }
+
+  .service-item ion-icon {
+    margin-top: 15px;
+    font-size: 45px;
+  }
+
+  .service-content .service-title {
+    font-size: 25px;
+  }
+
+  .service-content .service-desc {
+    color: var(--warna-hitam-hangat);
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .showcase-banner {
+    gap: 20px;
+  }
+
+  .showcase-category {
+    font-size: 20px;
+  }
+
+  .showcase-title {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .showcase-rating ion-icon {
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+
+  .price-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .price-box .price {
+    font-size: 20px;
+  }
+
+  .price-box del {
+    font-size: 20px;
+  }
+
+  .testimonial-card {
+    width: 50%;
+  }
+
+  .footer-category-title {
+    font-size: 25px;
+  }
+
+  .category-box-title {
+    font-size: 20px;
+  }
+  .footer-category-link {
+    font-size: 15px;
+  }
+
+  .footer-nav-link {
+    font-size: 20px;
+  }
 }
