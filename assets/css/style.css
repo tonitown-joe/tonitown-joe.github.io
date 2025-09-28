@@ -2156,11 +2156,11 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     gap: 15px;
-    width: max-content; /* Pastikan wadah cukup lebar untuk semua item */
+    width: max-content;
     animation: slide-scroll 20s linear infinite;
   }
 
-  /* Menyembunyikan scrollbar untuk browser berbasis Webkit (Chrome, Safari) */
+  /* Menyembunyikan scrollbar untuk browser berbasis Webkit */
   .category-item-container.has-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -2221,7 +2221,7 @@ footer {
     }
     100% {
       transform: translateX(-50%);
-    }
+}
   }
 
   .section-title {
